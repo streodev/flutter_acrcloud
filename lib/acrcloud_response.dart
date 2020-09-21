@@ -64,6 +64,9 @@ class ACRCloudResponseMusicItem {
   @JsonKey(name: 'play_offset_ms')
   int playOffsetMs;
 
+  @JsonKey(name: 'external_metadata')
+  Map externalMetaData;
+
   ACRCloudResponseMusicItem(
       this.label,
       this.album,
@@ -74,7 +77,8 @@ class ACRCloudResponseMusicItem {
       this.durationMs,
       this.releaseDate,
       this.score,
-      this.playOffsetMs);
+      this.playOffsetMs
+      this.externalMetaData);
 
   factory ACRCloudResponseMusicItem.fromJson(Map<String, dynamic> json) =>
       _$ACRCloudResponseMusicItemFromJson(json);
