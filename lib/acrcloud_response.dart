@@ -77,7 +77,7 @@ class ACRCloudResponseMusicItem {
       this.durationMs,
       this.releaseDate,
       this.score,
-      this.playOffsetMs
+      this.playOffsetMs,
       this.externalMetaData);
 
   factory ACRCloudResponseMusicItem.fromJson(Map<String, dynamic> json) =>
