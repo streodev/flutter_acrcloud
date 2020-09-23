@@ -59,6 +59,7 @@ ACRCloudResponseMusicItem _$ACRCloudResponseMusicItemFromJson(
     json['score'] as int,
     json['play_offset_ms'] as int,
     json['external_metadata'] as Map,
+    json['external_ids'] as Map,
   );
 }
 
